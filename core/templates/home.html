@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<h1>Youtube video downloader</h1>
+ 
+<div class="form-intp">
+<form action="" method="post">
+  {% csrf_token %}
+  
+  <input placeholder="enter youtube url link" type="text" id="link" name="link" required><br><br>
+  <button type="submit" value="Submit"> Download</button>
+
+</form>
+</div> 
+
+<style>
+  h1{
+    color: #18285d;
+        text-align: center;
+        margin-top: 10%;
+    font-weight: bold;
+  }
+  .form-intp{
+      text-align: center;
+  }
+  input{
+    padding: 7px 20px 8px;
+    max-width: 600px;
+    color: brown;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+  }
+  button{
+    padding: 5px 20px 5px;
+    background-color: #0529a0;
+    font-size: 15px;
+    color: #ffffff;
+    border: 1px solid #0529a0;
+    border-radius: 5px;
+  }
+</style>
+</body>
+</html>
